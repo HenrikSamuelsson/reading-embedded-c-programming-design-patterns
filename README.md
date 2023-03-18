@@ -17,6 +17,6 @@ The design patterns discussed in the book are:
 - Return value pattern
 - Concurrency pattern
 - Spinlock pattern
-- Sempahore pattern
+- Semaphore pattern
 - Mutual exclusion pattern
 - Conditional pattern
