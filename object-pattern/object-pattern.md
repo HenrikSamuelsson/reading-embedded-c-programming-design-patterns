@@ -15,3 +15,9 @@ A C function with a static variable inside will not be re-entrant, assuming that
 > Why do we call our pointer to context 'self' and why should we avoid using other names to refer to 'self'?
 
 Self works as a reminder that it is an reference to the object itself. Sticking to one word makes it clear that we employ the object pattern. The word self will not conflict with any keywords in C and also C++.
+
+### Question 4
+
+> Why is it sometimes necessary to instantiate objects locally in the C file as singletons?
+
+It saves memory due to that singleton objects will be shared between all object instances as one single entity instead of each instance having its own version.
