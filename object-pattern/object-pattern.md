@@ -10,11 +10,17 @@
 
 A C function with a static variable inside will not be re-entrant, assuming that the result of the function depends on the static variable. The result of the function might be different when called multiple times even if identical parameters are provided. Static variables will hence introduce side effects to functions and this will break the object oriented design that the object pattern is designed to solve, the idea being that the data flow shall be able to be traced through the call graph.
 
+### Question 2
+
+> Why do we avoid functions without parameters? What negative property do these functions possess that make them a very bad design flaw in C source code?
+
+It most likely so that functions without parameters still depends on data and manipulates data but to be sure what data you have to investigate and look inside the function body. The data will either be global variables or static variables inside the function, this impairs code readability, maintainability, and testability. Introducing the self pointer as a parameter according to the object pattern improves the design and helps to eliminate the mentioned issues.
+
 ### Question 3
 
 > Why do we call our pointer to context 'self' and why should we avoid using other names to refer to 'self'?
 
-The word self is chosen since it works well as a reminder that it is an reference to the object itself. Sticking to one word makes it clear that we employ the object pattern. The word self will not conflict with any keywords in C and also C++.
+The word self is chosen since it works well as a reminder that it is an reference to an object instance of itself. Sticking to always use the same term makes it clear that the object pattern have been employed. Also note that word self will not conflict with any keywords in C nor C++.
 
 ### Question 4
 
