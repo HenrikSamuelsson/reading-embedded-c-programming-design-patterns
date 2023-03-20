@@ -14,7 +14,7 @@ A C function with a static variable inside will not be re-entrant, assuming that
 
 > Why do we call our pointer to context 'self' and why should we avoid using other names to refer to 'self'?
 
-Self works as a reminder that it is an reference to the object itself. Sticking to one word makes it clear that we employ the object pattern. The word self will not conflict with any keywords in C and also C++.
+The word self is chosen since it works well as a reminder that it is an reference to the object itself. Sticking to one word makes it clear that we employ the object pattern. The word self will not conflict with any keywords in C and also C++.
 
 ### Question 4
 
