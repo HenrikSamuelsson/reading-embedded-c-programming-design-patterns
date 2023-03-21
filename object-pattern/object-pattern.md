@@ -33,3 +33,9 @@ It saves memory due to that singleton objects will be shared between all object 
 > Why is it sometimes necessary to only expose a pointer to the data structure outside of the implementing C file?
 
 A data structure may hold special types that are only used internally in the C file it is then better to keep this information hidden because otherwise all other modules that use the data structure will have to include these special types. Only exposing a pointer hides the implementation and then there will need to be a set of functions that forms an interface to the parts that shall reachable from other modules.
+
+### Question 6
+
+> Why is it a good practice to always name the header and the C file with the same name as the data object they implement?
+
+The convention to use the same for the H file as the C file creates a directory tree separating elements into to something similar to the concept of namespaces. It also makes it simple to locate and get an overview of what data objects a project includes. Finally it is an easy rule to follow and explain to new team members.
