@@ -27,3 +27,9 @@ The word self is chosen since it works well as a reminder that it is an referenc
 > Why is it sometimes necessary to instantiate objects locally in the C file as singletons?
 
 It saves memory due to that singleton objects will be shared between all object instances as one single entity instead of each instance having its own version.
+
+### Question 5
+
+> Why is it sometimes necessary to only expose a pointer to the data structure outside of the implementing C file?
+
+A data structure may hold special types that are only used internally in the C file it is then better to keep this information hidden because otherwise all other modules that use the data structure will have to include these special types. Only exposing a pointer hides the implementation and then there will need to be a set of functions that forms an interface to the parts that shall reachable from other modules.
