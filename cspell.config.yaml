@@ -3,6 +3,7 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - extern
   - Spinlock
 ignoreWords: []
 import: []
