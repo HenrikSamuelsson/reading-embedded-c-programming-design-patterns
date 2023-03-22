@@ -39,3 +39,9 @@ A data structure may hold special types that are only used internally in the C f
 > Why is it a good practice to always name the header and the C file with the same name as the data object they implement?
 
 The convention to use the same for the H file as the C file creates a directory tree separating elements into to something similar to the concept of namespaces. It also makes it simple to locate and get an overview of what data objects a project includes. Finally it is an easy rule to follow and explain to new team members.
+
+### Question 7
+
+> Why should you never use 'extern' declared variables anywhere in your C code?
+
+Using extern variables opens up for other parts of the code base to modify the variables in ways that do not comply with the agreed upon access conventions. This will cause the code base to slowly but steadily degrade into what in known as spaghetti code which means code that is hard to understand because it has no defined structure.
