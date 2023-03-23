@@ -1,8 +1,41 @@
 # Object Pattern
 
-**Synopsis:** Group data into objects with classes and member functions for instantiation and destruction
+## Definition
 
-## Quiz Notes
+Group data into structures and direct functions to operate on these data structures, each group will form an object.
+
+## Implementation
+
+File example_object.h:
+
+```c
+struct example_object.h
+{
+  uint32_t variable;
+  uint32_t flags;
+};
+
+void example_object_init(struct my_object *self);
+void example_object_deinit(struct my_object *self);
+```
+
+File example_object.c:
+
+```c
+#include "example_object.h"
+
+void example_object_init(struct my_object *self)
+{
+    memset(self, 0, sizeof(*self));
+}
+
+void example_deinit(struct my_object *self)
+{
+    // TODO cleanup
+}
+```
+
+## Quiz Solution
 
 ### Question 1
 
