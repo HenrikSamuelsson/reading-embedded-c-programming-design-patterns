@@ -3,7 +3,10 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - deinit
   - extern
-  - Spinlock
+  - memset
+  - spinlock
+  - struct
 ignoreWords: []
 import: []
