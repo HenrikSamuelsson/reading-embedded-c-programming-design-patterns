@@ -31,7 +31,7 @@ void example_object_init(struct my_object *self)
 
 void example_deinit(struct my_object *self)
 {
-    // TODO cleanup
+    // Clean up...
 }
 ```
 
