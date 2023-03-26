@@ -2,14 +2,14 @@
 
 ## Definition
 
-Group data into structures and direct functions to operate on these data structures, each group will form an object.
+Form an object by grouping data into structures and direct functions to operate on these data structures.
 
 ## Implementation
 
-File example_object.h:
+Code in file example_object.h:
 
 ```c
-struct example_object.h
+struct example_object
 {
   uint32_t variable;
   uint32_t flags;
@@ -19,7 +19,7 @@ void example_object_init(struct my_object *self);
 void example_object_deinit(struct my_object *self);
 ```
 
-File example_object.c:
+Code in file example_object.c:
 
 ```c
 #include "example_object.h"
