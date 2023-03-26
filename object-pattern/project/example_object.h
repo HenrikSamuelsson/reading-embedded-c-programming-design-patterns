@@ -2,9 +2,9 @@
 
 struct example_object
 {
-    uint32_t variable;
-    uint32_t flags;
+    uint32_t example_variable;
+    uint32_t example_flags;
 };
 
-void example_object_init(struct my_object *self);
-void example_object_deinit(struct my_object *self);
+void example_object_init(struct example_object *self);
+void example_object_deinit(struct example_object *self);

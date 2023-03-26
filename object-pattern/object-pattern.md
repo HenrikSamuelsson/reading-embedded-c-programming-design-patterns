@@ -11,12 +11,12 @@ Code in file example_object.h:
 ```c
 struct example_object
 {
-  uint32_t variable;
-  uint32_t flags;
+  uint32_t example_variable;
+  uint32_t example_flags;
 };
 
-void example_object_init(struct my_object *self);
-void example_object_deinit(struct my_object *self);
+void example_object_init(struct example_object *self);
+void example_object_deinit(struct example_object *self);
 ```
 
 Code in file example_object.c:
@@ -24,12 +24,12 @@ Code in file example_object.c:
 ```c
 #include "example_object.h"
 
-void example_object_init(struct my_object *self)
+void example_object_init(struct example_object *self)
 {
     memset(self, 0, sizeof(*self));
 }
 
-void example_deinit(struct my_object *self)
+void example_deinit(struct example_object *self)
 {
     // Clean up...
 }
