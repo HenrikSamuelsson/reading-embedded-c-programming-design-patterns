@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/object-pattern/project"
+    "cmake.sourceDirectory": "${workspaceFolder}/object-pattern/project",
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\build\\compile_commands.json"
 }
