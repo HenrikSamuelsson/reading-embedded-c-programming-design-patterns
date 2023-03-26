@@ -1,3 +1,6 @@
+#ifndef EXAMPLE_OBJECT_H
+#define EXAMPLE_OBJECT_H
+
 #include <stdint.h>
 
 struct example_object
@@ -8,3 +11,5 @@ struct example_object
 
 void example_object_init(struct example_object *self);
 void example_object_deinit(struct example_object *self);
+
+# endif    /* EXAMPLE_OBJECT_H */
