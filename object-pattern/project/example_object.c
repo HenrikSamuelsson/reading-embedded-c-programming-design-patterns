@@ -8,7 +8,7 @@ void example_object_init(struct example_object *self)
     memset(self, 0, sizeof(*self));
 }
 
-void example_deinit(struct example_object *self)
+void example_object_deinit(struct example_object *self)
 {
     /* Clean up... */
 }

@@ -6,7 +6,10 @@ enable_testing()
 
 set (CMAKE_CXX_STANDARD 11)
 
-add_executable(object-pattern main.c example_object.c)
+add_executable(object-pattern 
+    main.c 
+    example_object.c
+    example_object.h)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

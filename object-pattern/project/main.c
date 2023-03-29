@@ -13,7 +13,7 @@ void application_init(struct application *self){
 int main(void)
 {
     struct application app;
-    application_init(struct &app.obj);
+    application_init(&app);
     
     return 0;
 }
