@@ -1,6 +1,19 @@
-#include <stdio.h>
+#include "example_object.h"
 
-int main()
+struct application
 {
-    printf("Hello World");
+    struct example_object obj;
+};
+
+
+void application_init(struct application *self){
+    example_object_init(&self->obj);
+}
+
+int main(void)
+{
+    struct application app;
+    application_init(struct &app.obj);
+    
+    return 0;
 }
