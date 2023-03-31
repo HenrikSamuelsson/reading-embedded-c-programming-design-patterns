@@ -2,7 +2,7 @@
 
 ## Definition
 
-Form an object by grouping data into structures and direct functions to operate on these data structures.
+Data flows along the call path in the code path by providing an object that the code references. The object is formed by grouping data into structures and direct functions to operate on these data structures.
 
 ## Implementation
 
