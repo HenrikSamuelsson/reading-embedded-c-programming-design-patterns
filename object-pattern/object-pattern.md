@@ -1,10 +1,18 @@
 # Object Pattern
 
-## Definition
+## Intent
 
 Data flows along the call path in the code path by providing an object that the code references. The object is formed by grouping data into structures and direct functions to operate on these data structures.
 
-## Implementation
+## Motivation
+
+Makes it possible to follow the data flow through the code. This makes it easier to understand how the code works without having to run and test the code to understand how it works.
+
+The code becomes testable because it can be compiled in isolation and fed with mock data.
+
+## Structure
+
+## Code Example
 
 Code in file example_object.h:
 
